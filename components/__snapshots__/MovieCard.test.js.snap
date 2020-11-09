@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard should render item 1`] = `
+<article
+  className="movieCard"
+>
+  <div
+    className="image "
+  >
+    <img
+      className="image__blur"
+      src="/image.png"
+    />
+    <img
+      className="image__poster"
+      src="/image.png"
+    />
+  </div>
+  <div
+    className="movieCard__title"
+  >
+    <h3>
+      2020
+    </h3>
+    <div>
+      2020
+    </div>
+    <div>
+      movie
+    </div>
+  </div>
+</article>
+`;

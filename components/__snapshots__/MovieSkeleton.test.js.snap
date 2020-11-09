@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieSkeleton should render 1`] = `
+<div
+  className="movieCard"
+>
+  <div
+    className="movieCard__posterContainer"
+  >
+    <span>
+      <span
+        className="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+        style={
+          Object {
+            "height": "6rem",
+            "width": "6rem",
+          }
+        }
+      >
+        ‌
+      </span>
+    </span>
+  </div>
+  <div
+    className="movieCard__title"
+  >
+    <h3>
+      <span>
+        <span
+          className="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+          style={
+            Object {
+              "width": "8rem",
+            }
+          }
+        >
+          ‌
+        </span>
+      </span>
+    </h3>
+    <div>
+      <span>
+        <span
+          className="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+          style={
+            Object {
+              "width": "4rem",
+            }
+          }
+        >
+          ‌
+        </span>
+      </span>
+    </div>
+    <div>
+      <span>
+        <span
+          className="react-loading-skeleton css-1vmnjpn-skeletonStyles-Skeleton"
+          style={
+            Object {
+              "width": "4rem",
+            }
+          }
+        >
+          ‌
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

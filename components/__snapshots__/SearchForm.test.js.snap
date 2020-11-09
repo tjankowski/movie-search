@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm should render 1`] = `
+<form
+  className="searchForm"
+>
+  <input
+    className="searchForm__input"
+    onChange={[Function]}
+    placeholder="Type movie title here"
+    type="text"
+  />
+  <button
+    className="searchForm__button"
+    onClick={[Function]}
+    type="button"
+  >
+    Search
+  </button>
+</form>
+`;
+
+exports[`SearchForm should render with query 1`] = `
+<form
+  className="searchForm"
+>
+  <input
+    className="searchForm__input"
+    onChange={[Function]}
+    placeholder="Type movie title here"
+    type="text"
+    value="test"
+  />
+  <button
+    className="searchForm__button"
+    onClick={[Function]}
+    type="button"
+  >
+    Search
+  </button>
+</form>
+`;
+
+exports[`SearchForm should render with query and onChange 1`] = `
+<form
+  className="searchForm"
+>
+  <input
+    className="searchForm__input"
+    onChange={[Function]}
+    placeholder="Type movie title here"
+    type="text"
+    value="test"
+  />
+  <button
+    className="searchForm__button"
+    onClick={[Function]}
+    type="button"
+  >
+    Search
+  </button>
+</form>
+`;

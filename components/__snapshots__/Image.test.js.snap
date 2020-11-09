@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should render image 1`] = `
+<div
+  className="image "
+>
+  <img
+    className="image__blur"
+    src="/empty.gif"
+  />
+  <img
+    className="image__poster"
+    src="/empty.gif"
+  />
+</div>
+`;
+
+exports[`Image should render image with class 1`] = `
+<div
+  className="image class"
+>
+  <img
+    className="image__blur"
+    src="/empty.gif"
+  />
+  <img
+    className="image__poster"
+    src="/empty.gif"
+  />
+</div>
+`;
+
+exports[`Image should render placeholder 1`] = `
+<div
+  className="image "
+>
+  <div
+    className="image__placeholder"
+  />
+</div>
+`;
