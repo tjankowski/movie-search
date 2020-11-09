@@ -1,30 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Summary
 
-## Getting Started
+Responsive movie search demo.
+Demo allows user to search for movie/series/game and display details for selected result. Infinite scroll pattern is used to load more results from API when needed.
 
-First, run the development server:
+[Demo](https://movie-search-reizgvi6r.vercel.app)
 
-```bash
-npm run dev
-# or
+> Unfortunately due to the [NextJS 10 issue](https://github.com/vercel/next.js/issues/18769) deployed on Vercel unstyled content(FOUC) is visible when user navigates between pages. Issue is not present on development environment
+
+### Features backlog
+
+- [x] Searching page with form
+- [x] Search results using OMDB API
+- [x] Load details using OMDB API
+- [x] Handle fetching errors
+- [x] Handle no resuls error
+- [x] Handle no resuls error
+- [x] Support results paging using infinite scroll pattern
+- [x] Display data loading status using skeletons pattern
+- [x] Server-side rendering based on query parameter
+- [x] Query parameter update in URL during searching
+- [x] Enter and exit animations for pages
+- [x] Staggering animation for loaded results
+- [x] Page to display basic details for selected item
+- [x] Responsive UI
+- [x] John Travolta looking for missing posters
+- [ ] Transform images using Cloudinary SDK
+- [ ] Narrow searching results to selected type like movie, series, game. Filters displayed as part of search form on additional panel below input field.
+- [ ] Staring animation. Display search form in the middle of the page and move it to the top when users starts typing.
+- [ ] Replace search form placeholder with typing animation presenting how to search. Animation would present example queries by changing value of the input characted by character in both directions, simulating typing and deleting query using Backspace.
+- [ ] Add multimodal design by adding voice interactions. Create voice interface using Dialogflow connected with application API and browsers microphone support. Add basic commands to search movie, display details and navigate between pages.
+- [ ] Display more details on details page like ratings.
+- [ ] Add reviews and comments using Disqus API.
+- [ ] Add PWA support.
+- [ ] Create multiplayer game about finding movie based on the plot. Multiplayer support implemented using WebSockets. Scoring based on time and number of tries.
+
+### Project structure:
+
+- `/api` - contains logic to fetch data from API
+- `/components` - directory for stateles reusable UI compoents
+- `/hooks` - directory for React hooks for IntersectionObserver and data fetching
+- `/pages` - NextJS pages for used as components with state and UI logic
+- `/public`- directory to store public assets
+- `/scripts`- directory for additional scripts helpful during development
+- `/styles`- directory for CSS & SCSS styles
+- `/utils`- functions used across application
+
+3rd party libraries used for project:
+
+- `sass` - to style UI
+- `lodash.debounce` - to limit calls to API on user interaction
+- `react-loading-skeleton` - to display placeholders during data fetching
+- `framer-motion` - to add some animations
+- `dotenv` - to load environment variables
+- `jest` - for unit testing
+
+To improve:
+
+- create unit tests for hooks
+- add integration tests because API design is uncertain
+- add development tools like eslint, prettier and git hooks
+- improve image tranformations using Cloudinary SDK
+
+## Usage
+
+### `Setup`
+
+Requirements to run:
+
+- one of latest NodeJS versions - created using `14.3.0`
+- `yarn` or `npm` to download dependecies and run scripts
+
+### Quick start
+
+1. Install dependecies using `yarn` or `npm`
+2. Run in development mode using start script `yarn dev` or `npm run dev`
+
+### Commands
+
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+yarn test
+```
 
-## Learn More
+Launches the test runner.<br />
 
-To learn more about Next.js, take a look at the following resources:
+```
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Builds the application for production usage.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+yarn start
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Starts a Next.js production server
