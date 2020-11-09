@@ -1,0 +1,47 @@
+@use "styles/var";
+
+.movie {
+  display: flex;
+  flex-direction: column;
+
+  &__poster {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  &__description {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+  }
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var.$darkGray;
+  }
+
+  &__fields {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__fieldName {
+    color: var.$lightGray;
+  }
+}
+
+@media only screen and (min-device-width: var.$phoneWidth) {
+  .movie {
+    flex-direction: row;
+
+    &__poster {
+      order: 2;
+    }
+
+    &__description {
+      padding: 0 2rem 0 0;
+    }
+  }
+}

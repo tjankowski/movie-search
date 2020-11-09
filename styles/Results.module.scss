@@ -1,0 +1,27 @@
+@use "styles/var";
+
+.results {
+  display: grid;
+  grid-gap: 4rem 2rem;
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 4em 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__error {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-device-width: var.$phoneWidth) {
+  .results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
