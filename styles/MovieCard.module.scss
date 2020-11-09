@@ -1,0 +1,17 @@
+@use "styles/var";
+
+.movieCard {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    padding: 0 0 0 2rem;
+    border-radius: 0 0 1rem 1rem;
+    color: var.$lightGray;
+    & > h3 {
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      color: var.$darkGray;
+    }
+  }
+}

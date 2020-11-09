@@ -1,0 +1,20 @@
+$phoneWidth: 480px;
+
+$white: #fff;
+$lightGray: #999;
+$darkGray: #444;
+$lightBlue: #eff7f6;
+$blue: #7bdff2;
+
+$shadow: rgba(40, 40, 40, 0.2);
+$blueShadow: rgba(123, 223, 242, 0.2);
+
+$blue50: rgba(123, 223, 242, 0.5);
+
+@mixin box-shadow($color) {
+  box-shadow: 0 0.5rem 1rem $color;
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}
