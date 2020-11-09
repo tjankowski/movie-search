@@ -69,11 +69,13 @@ Requirements to run:
 
 - one of latest NodeJS versions - created using `14.3.0`
 - `yarn` or `npm` to download dependecies and run scripts
+- .env or .env.local files with variables
 
 ### Quick start
 
 1. Install dependecies using `yarn` or `npm`
 2. Run in development mode using start script `yarn dev` or `npm run dev`
+3. Create .env file with NEXT_PUBLIC_API_URL (https://www.omdbapi.com) & NEXT_PUBLIC_API_TOKEN variables with proper values.
 
 ### Commands
 
