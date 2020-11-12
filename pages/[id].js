@@ -32,7 +32,11 @@ export default function Item({ item }) {
         <main>
           <article>
             <div className={movieStyles.movie}>
-              <Image src={item.Poster} className={movieStyles.movie__poster} />
+              <Image
+                src={item.Poster}
+                className={movieStyles.movie__poster}
+                title={item.Title}
+              />
               <div className={movieStyles.movie__description}>
                 <h1 className={movieStyles.movie__title}>{item.Title}</h1>
                 <p>
