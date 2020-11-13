@@ -3,9 +3,11 @@
 Responsive movie search demo.
 Demo allows user to search for movie/series/game and display details for selected result. Infinite scroll pattern is used to load more results from API when needed.
 
-[Demo](https://movie-search-reizgvi6r.vercel.app)
+[Demo](https://movie-search-five.vercel.app/)
 
 > Unfortunately due to the [NextJS 10 issue](https://github.com/vercel/next.js/issues/18769) deployed on Vercel unstyled content(FOUC) is visible when user navigates between pages. Issue is not present on development environment
+
+> Deployed new vesion using NextJS 9.5.1 which doesn't have unstyled content issue but it has other issue with CSS order.
 
 ### Features backlog
 
