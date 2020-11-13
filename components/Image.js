@@ -4,9 +4,13 @@ import styles from "styles/Image.module.scss";
 
 const NA = "N/A";
 
-export default function Image({ src = NA, className, title = "" }) {
+export default function Image({
+  src = NA,
+  className = styles.image,
+  title = "",
+}) {
   return (
-    <div className={union(className, styles.image)}>
+    <div className={className}>
       {src !== NA ? (
         <>
           <img
