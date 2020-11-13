@@ -19,7 +19,7 @@ export default function Item({ item }) {
         exit={hidden}
         className={styles.container}
       >
-        <nav className={[styles.padding_b_2, styles.blue].join(" ")}>
+        <nav className={[styles.padding_b_2, styles.darkBlue].join(" ")}>
           <Link
             href={{
               pathname: "/",
