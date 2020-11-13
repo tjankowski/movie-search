@@ -6,7 +6,7 @@ const NA = "N/A";
 
 export default function Image({ src = NA, className, title = "" }) {
   return (
-    <div className={union(styles.image, className)}>
+    <div className={union(className, styles.image)}>
       {src !== NA ? (
         <>
           <img
