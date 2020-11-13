@@ -7,13 +7,18 @@ $lightBlue: #eff7f6;
 $blue: #7bdff2;
 $darkBlue: #324b50;
 
-$shadow: rgba(40, 40, 40, 0.2);
+$shadow20: rgba(40, 40, 40, 0.2);
+$shadow30: rgba(40, 40, 40, 0.3);
 $blueShadow: rgba(123, 223, 242, 0.2);
 
 $blue50: rgba(123, 223, 242, 0.5);
 
 @mixin box-shadow($color) {
   box-shadow: 0 0.5rem 1rem $color;
+}
+
+@mixin box-shadow-large($color) {
+  box-shadow: 0 0.5rem 2rem $color;
 }
 
 @mixin border($color) {

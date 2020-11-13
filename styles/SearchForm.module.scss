@@ -9,14 +9,14 @@
   border-radius: 1rem;
   background: var.$white;
   @include var.border(var.$white);
-  @include var.box-shadow(var.$shadow);
+  @include var.box-shadow(var.$shadow20);
   padding: 0 0 0 1rem;
   justify-content: space-between;
   transition: all 0.5s ease;
 
   &:focus-within {
-    @include var.border(var.$blue50);
-    @include var.box-shadow(var.$blueShadow);
+    @include var.border(var.$white);
+    @include var.box-shadow-large(var.$shadow30);
   }
 
   &__input {
